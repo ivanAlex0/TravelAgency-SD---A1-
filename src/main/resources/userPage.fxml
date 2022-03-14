@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="destinationField" prefHeight="792.0" prefWidth="1400.0" style="-fx-background-color: #EB7C47;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UserPage">
+    <children>
+        <ListView fx:id="availableDestinationList" layoutX="37.0" layoutY="326.0" onMouseClicked="#listPackagesForDestination" prefHeight="370.0" prefWidth="179.0" />
+        <Button layoutX="55.0" layoutY="702.0" mnemonicParsing="false" onAction="#listDestinations" prefHeight="26.0" prefWidth="149.0" text="List" />
+        <Button layoutX="22.0" layoutY="20.0" mnemonicParsing="false" onAction="#goBack" text="Go back" />
+        <Text fill="#446476" layoutX="1011.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booked packages:">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+        <Text fx:id="errorText" fill="RED" layoutX="407.0" layoutY="757.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="428.800048828125" />
+        <Button layoutX="914.0" layoutY="699.0" mnemonicParsing="false" onAction="#listBookedPackages" prefHeight="26.0" prefWidth="296.0" text="List" />
+        <Button layoutX="619.0" layoutY="702.0" mnemonicParsing="false" onAction="#bookPackage" prefHeight="60.0" prefWidth="131.0" style="-fx-background-color: #446476;" text="Book packge">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Text fill="#446476" layoutX="58.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available destinations:">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+        <ListView fx:id="availablePackageList" layoutX="316.0" layoutY="327.0" prefHeight="370.0" prefWidth="435.0" />
+        <Text fill="#446476" layoutX="451.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available packages:">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Button layoutX="314.0" layoutY="704.0" mnemonicParsing="false" onAction="#listAvailablePackages" prefHeight="26.0" prefWidth="131.0" text="List all" />
+      <TextField fx:id="priceField" layoutX="445.0" layoutY="140.0" />
+      <TextField fx:id="destinationNameField" layoutX="61.0" layoutY="259.0" />
+      <DatePicker fx:id="fromDateField" layoutX="445.0" layoutY="191.0" />
+      <DatePicker fx:id="toDateField" layoutX="445.0" layoutY="242.0" />
+      <TextField fx:id="packageNameField" layoutX="445.0" layoutY="93.0" />
+      <ListView fx:id="bookedPackageList" layoutX="852.0" layoutY="320.0" prefHeight="370.0" prefWidth="435.0" />
+      <Text fill="#446476" layoutX="145.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter the packages">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Text layoutX="504.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+      <Text layoutX="492.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From date" />
+      <Text layoutX="499.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To date" />
+      <Text layoutX="113.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="501.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+    </children>
+</AnchorPane>

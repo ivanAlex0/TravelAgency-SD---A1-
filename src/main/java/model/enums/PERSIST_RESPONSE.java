@@ -1,0 +1,10 @@
+package model.enums;
+
+public enum PERSIST_RESPONSE {
+    SUCCESS,
+    DUPLICATE_ENTITY,
+    INVALID_NUMBERS,
+    INVALID_INPUT,
+    NULL_DATE,
+    INVALID_DATE
+}

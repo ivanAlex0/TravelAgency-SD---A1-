@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1400.0" style="-fx-background-color: #446476;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AgencyView">
+    <children>
+      <Button layoutX="812.0" layoutY="925.0" mnemonicParsing="false" onAction="#listDestinations" prefHeight="26.0" prefWidth="230.0" text="List destinations" textFill="#816027" />
+      <TextField fx:id="destinationField" layoutX="1126.0" layoutY="622.0" prefHeight="26.0" prefWidth="210.0" />
+      <Button layoutX="1152.0" layoutY="659.0" mnemonicParsing="false" onAction="#addDestination" prefHeight="26.0" prefWidth="158.0" text="Add destination" textFill="#a100ff" />
+      <ListView fx:id="packageList" layoutX="42.0" layoutY="46.0" onMouseClicked="#selectPack" prefHeight="408.0" prefWidth="1285.0" />
+      <Button layoutX="1152.0" layoutY="701.0" mnemonicParsing="false" onAction="#deleteDestination" prefHeight="26.0" prefWidth="158.0" text="Delete destination" textFill="#ec0101" />
+      <Text fx:id="errorText" fill="RED" layoutX="40.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="319.33337097167987" />
+      <TextField fx:id="name" layoutX="444.0" layoutY="511.0" prefHeight="26.0" prefWidth="210.0" />
+      <TextField fx:id="price" layoutX="444.0" layoutY="564.0" prefHeight="26.0" prefWidth="210.0" />
+      <TextField fx:id="extraDetails" layoutX="444.0" layoutY="719.0" prefHeight="26.0" prefWidth="210.0" />
+      <DatePicker fx:id="from" layoutX="462.0" layoutY="614.0" />
+      <DatePicker fx:id="to" layoutX="461.0" layoutY="668.0" />
+      <TextField fx:id="availableSpots" layoutX="444.0" layoutY="769.0" prefHeight="26.0" prefWidth="210.0" />
+      <TextField fx:id="destination" layoutX="444.0" layoutY="820.0" prefHeight="26.0" prefWidth="210.0" />
+      <Button layoutX="59.0" layoutY="472.0" mnemonicParsing="false" onAction="#listPackages" prefHeight="26.0" prefWidth="288.0" text="List packages" textFill="#816027" />
+      <Button layoutX="512.0" layoutY="864.0" mnemonicParsing="false" onAction="#addPackage" text="Add package" textFill="#a100ff" />
+      <Button layoutX="25.0" layoutY="13.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Button layoutX="124.0" layoutY="522.0" mnemonicParsing="false" onAction="#deletePackage" prefHeight="26.0" prefWidth="130.0" text="Delete package" textFill="RED" />
+      <Button layoutX="124.0" layoutY="562.0" mnemonicParsing="false" onAction="#updatePackage" prefHeight="26.0" prefWidth="130.0" text="Update package" textFill="BLUE" />
+      <Text layoutX="583.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Packages" wrappingWidth="64.19999999999993" />
+      <ListView fx:id="destinationList" layoutX="774.0" layoutY="510.0" onMouseClicked="#selectDestination" prefHeight="408.0" prefWidth="306.0" />
+      <Text layoutX="894.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinations" wrappingWidth="98.33330078124993" />
+      <Line endX="4.20001220703125" endY="-179.98831176757812" layoutX="405.0" layoutY="664.0" startX="4.20001220703125" startY="253.5999755859375" />
+      <Line endX="4.20001220703125" endY="-179.98831176757812" layoutX="695.0" layoutY="664.0" startX="4.20001220703125" startY="253.5999755859375" />
+      <Line endX="-98.93338012695312" endY="11.466644287109375" layoutX="509.0" layoutY="472.0" startX="190.13336181640625" startY="11.466644287109375" />
+      <Line endX="-98.93338012695312" endY="11.466644287109375" layoutX="509.0" layoutY="907.0" startX="190.13336181640625" startY="11.466644287109375" />
+      <Text layoutX="533.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="533.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+      <Text layoutX="533.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" />
+      <Text layoutX="539.0" layoutY="664.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+      <Text layoutX="514.0" layoutY="714.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Extra details" />
+      <Text layoutX="502.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of spots" />
+      <Text layoutX="515.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination" />
+    </children>
+</AnchorPane>
